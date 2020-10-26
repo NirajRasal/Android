@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="101dp"
+        android:layout_marginRight="16dp"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_reset"
+        android:layout_alignBottom="@+id/bt_reset"
+        android:text="Submit" />
+
+    <RadioButton
+        android:id="@+id/rbNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_marginTop="32dp"
+        android:checked="false"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radiogroup"
+        android:text="Are you a diabetic patient?"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txt_sugarCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_submit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="37dp"
+        android:text="Sugar Count(mg/dl)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/event"
+        style="@android:style/Theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt_reset"
+        android:layout_below="@+id/rbNo"
+        android:layout_marginTop="61dp" />
+
+    <TextView
+        android:id="@+id/txt_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/event"
+        android:layout_toRightOf="@+id/radiogroup"
+        android:text="Event"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/sugar_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_sugarCount"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <RadioButton
+        android:id="@+id/rbYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rbNo"
+        android:layout_alignBottom="@+id/rbNo"
+        android:layout_alignRight="@+id/textView1"
+        android:text="yes" />
+
+</RelativeLayout>
